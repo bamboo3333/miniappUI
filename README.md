@@ -5,7 +5,9 @@
 ![界面展示](https://s1.ax1x.com/2020/03/23/8Hr5M8.png)
 
     
-    主要关注index.js中的`getMessage`函数：用来与数据库交互
+    主要关注index.js中的`getMessage`函数：用来与数据库交互    
+        
+***        
     
     ``` javascript
      getMessage: function () {
