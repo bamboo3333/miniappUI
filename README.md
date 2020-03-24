@@ -8,8 +8,7 @@
     主要关注index.js中的`getMessage`函数：用来与数据库交互    
         
 ***        
-    
-    ``` javascript
+``` javascript
      getMessage: function () {
     var that = this;
     wx.request({
@@ -29,5 +28,4 @@
       complete: function(res) {},
     })
   }
-    
-    ```
+```
