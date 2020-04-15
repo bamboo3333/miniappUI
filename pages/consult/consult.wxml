@@ -1,2 +1,44 @@
 <!--pages/consult/consult.wxml-->
-<text>pages/consult/consult.wxml</text>
+<view class="container">
+` <view class="top">
+    <view class="list">
+      <view class='list-msg' bindtap='bindShowMsg'>
+        <text>{{tihuoWay}}</text>
+        <image style='height:20rpx;width:20rpx;' src='/images/icon/down.png'></image>
+      </view>
+      <view class="select_box" wx:if="{{select}}">
+        <view class="select_one" bindtap="mySelect" data-name="实习生">实习生</view>
+        <view class="select_one" bindtap="mySelect" data-name="招聘生">招聘生</view>
+        <view class="select_one" bindtap="mySelect" data-name="全职生">全职生</view>
+      </view>
+    </view>
+    
+    <view class="search-main">
+      <view class="search">
+        <icon class="searchicon" size="20" type="search"></icon>
+        <input placeholder="输入你想搜索的内容" name="searchcontext" type="text" bindinput="getInput">
+        </input>
+        <view class="sousuo" bindtap="search" >搜索</view>
+      </view>
+    </view>
+  </view>
+<view wx:for="{{message}}" id="index" bindtap="">
+
+  <view class="message" >
+    <view class="image">
+      <image src="/images/icon/down.png" style="width:60px;height:60px;" ></image>
+    </view>
+    <view class="content">
+      <view class="up">
+        <view class="title">{{item.title}}</view>
+        <view class="type">{{item.typeId}}</view>
+      </view>
+      <view class="down">
+        <view class="introduct">两行说明</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+</view>
+

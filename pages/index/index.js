@@ -18,7 +18,7 @@ Page({
   getMessage: function () {
     var that = this;
     wx.request({
-      url: 'http://localhost:8080/news/one',
+      url: 'http://localhost:8080/news/all',
       data: '',
       header: {
         'content-type':'application/json'

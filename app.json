@@ -1,26 +1,21 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/consult/consult",
+    "pages/index/index",
     "pages/train/train",
       "pages/me/me"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "实习通",
+    "navigationBarTitleText": "Offer直通车",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "backgroundColor": "#ffffff",
     "selectedColor": "#00b38a",
     "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "简历专制",
-        "iconPath": "/images/bar/jian0.png",
-        "selectedIconPath": "/images/bar/jian1.png"
-      },
+
       {
         "pagePath": "pages/consult/consult",
         "text": "招聘资讯",
@@ -28,8 +23,15 @@
         "selectedIconPath": "/images/bar/zixun1.png"
       },
       {
+        "pagePath": "pages/index/index",
+        "text": "简历专制",
+        "iconPath": "/images/bar/jian0.png",
+        "selectedIconPath": "/images/bar/jian1.png"
+      },
+
+      {
         "pagePath": "pages/train/train",
-        "text": "能力训练",
+        "text": "笔试训练营",
         "iconPath": "/images/bar/ability0.png",
         "selectedIconPath": "/images/bar/ability1.png"
       },

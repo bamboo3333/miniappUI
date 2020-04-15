@@ -1,0 +1,82 @@
+<!--pages/resume/resume.wxml-->
+
+<view class="content">
+  <view class="tip">
+    <view>
+      <image src="/images/icon/wenben.jpg" style="width:23px;height:27px;"></image>
+    </view>
+    <view>用电脑编辑简历，体验更好更流畅</view>
+    <view>></view>
+  </view>
+  <view class="item">
+    <view class="title">添加头像</view>
+    <view class="region" bindtap="addHead">
+      <block wx:if="{{headUrl==''}}">
+        <view class="head">
+          <image src="/images/icon/head.jpg" style="width:57px;height:47px;"></image>
+        </view>
+        <view class="headBtn">点击头像</view>
+      </block>
+      <block wx:else>
+        <view class="selectHead">
+          <image src="{{headUrl}}" style="width:57px;height:47px;"></image>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="item">
+    <view class="title">基本信息</view>
+    <view class="region left">
+      <view class="edit" bindtap="editBaseInfo">
+        <image src="/images/icon/edit.jpg" style="width:15px;height:15px"></image>编辑
+      </view>
+      <view>姓名：{{person.name}}</view>
+      <view>性别：{{person.gender}}</view>
+      <view>最高学历：{{person.school}}</view>
+      <view>工作年限：{{person.year}}</view>
+      <view>所在城市：{{person.city}}</view>
+      <view>联系电话：{{person.phone}}</view>
+      <view>联系邮箱：{{person.email}}</view>
+      <view>一句话描述：{{person.description}}</view>
+    </view>
+  </view>
+
+   <view class="item">
+    <view class="title">技能评价</view>
+    <view class="region" >
+      <view class="edit">
+        <image src="/images/icon/edit.jpg" style="width:15px;height:15px"></image>编辑
+      </view>
+      <view style="margin-top:25px;">
+        <view class="skill">
+          <view class="name">java</view>
+          <view class="level">精通</view>
+        </view>
+        <progress percent="60" color="#00B38A" stroke-width="12"/>
+      </view>
+      <view style="margin-top:25px;">
+        <view class="skill">
+          <view class="name">Axure原型设计</view>
+          <view class="level">精通</view>
+        </view>
+        <progress percent="75" color="#00B38A" stroke-width="12"/>
+      </view>
+      <view style="margin-top:25px;">
+        <view class="skill">
+          <view class="name">SSH三大框架</view>
+          <view class="level">掌握</view>
+        </view>
+        <progress percent="86" color="#00B38A" stroke-width="12"/>
+      </view>
+      <view style="margin-top:25px;">
+        <view class="skill">
+          <view class="name">数据库优化</view>
+          <view class="level">掌握</view>
+        </view>
+        <progress percent="98" color="#00B38A" stroke-width="12"/>
+      </view>
+    </view>
+  </view>
+
+</view>

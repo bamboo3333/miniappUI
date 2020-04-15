@@ -1,2 +1,55 @@
 <!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view class="content">
+  <view class="account">
+    <view class="pic">
+      <image src="{{userInfo.avatarUrl}}" style="width:68px;height:68px;"></image>
+    </view>
+    <view>{{userInfo.nickName}}</view>
+  </view>
+  <view class="items">
+    <view class="item">
+      <view class="img">
+        <image src="/images/me/jianli.png" style="width:16px;height:17px;"></image>
+      </view>
+      <view class="name">简历</view>
+      <view class="detail" bindtap="finishResume">
+        <text>不完善</text>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="item">
+      <view class="img">
+        <image src="/images/me/jilu.png" style="width:16px;height:17px;"></image>
+      </view>
+      <view class="name">招聘记录</view>
+      <view class="open">
+        <text>去开启</text>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="hr"></view>
+      <view class="item">
+      <view class="img">
+        <image src="/images/me/shoucang.png" style="width:16px;height:17px;"></image>
+      </view>
+      <view class="name">收藏</view>
+    </view>
+    <view class="line"></view>
+    <view class="item">
+      <view class="img">
+        <image src="/images/me/fankui.png" style="width:16px;height:17px;"></image>
+      </view>
+      <view class="name">意见反馈</view>
+    </view>
+    <view class="line"></view>
+    <view class="item">
+      <view class="img">
+        <image src="/images/me/shezhi.png" style="width:16px;height:17px;"></image>
+      </view>
+      <view class="name">设置</view>
+    </view>
+    <view class="line"></view>
+    <view class="hr"></view>
+  </view>
+</view>
+
