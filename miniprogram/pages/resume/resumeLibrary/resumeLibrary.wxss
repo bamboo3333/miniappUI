@@ -1,0 +1,68 @@
+/* 简历推荐 */
+.container {
+  margin: 0rpx;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.resume-title {
+  border: 1px solid #cccccc;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  border: 2rpx solid #ccc;
+}
+
+.resume-recommend-title {
+  margin: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+}
+
+.resume-recommend-title image {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.resume-recommend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rpx;
+  padding: 0rpx;
+}
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.item image {
+  width: 82%;
+  height: 591rpx;
+  border-radius: 40rpx;
+  border: 2rpx solid #ccc;
+}
+
+.item-text {
+  font-size: 35rpx;
+  font-family: "Microsoft YaHei";
+  color: #1296db;
+}
+
+/* 设置底部样式 */
+#foot {
+  font-size: 23rpx;
+}

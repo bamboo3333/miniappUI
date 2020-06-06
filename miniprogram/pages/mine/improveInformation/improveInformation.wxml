@@ -1,0 +1,28 @@
+<view class="container">
+	<view class="personInformation">
+		<view class="avatar">
+			<image src="../../../images/mine/avatar-default.png" />
+		</view>
+		<view class="item">
+			<text class="left-text">账号</text>
+			<text class="right-text">0001</text>
+		</view>
+		<view class="item">
+			<text class="left-text">昵称</text>
+			<input placeholder="昵称" type="text"></input>
+		</view>
+		<view class="item">
+			<text class="left-text">性别</text>
+			<text class="right-text">男</text>
+		</view>
+		<view class="item">
+			<text class="left-text">密码</text>
+			<input class="" placeholder="密码" type="text"></input>
+		</view>
+		<view class="item">
+			<text class="left-text">电话号码</text>
+			<input class="" placeholder="电话号码" type="number"></input>
+		</view>
+    <button class="buttom" bindtap="gotoBaidu">立即保存</button>
+	</view>
+</view>

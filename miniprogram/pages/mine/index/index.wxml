@@ -1,0 +1,36 @@
+<!-- 用户信息功能界面-->
+<view class="container">
+	<!-- 如果当前以及获取到用的微信授权，这显示微信用户的昵称与头像 -->
+	<view wx:if="{{hasUserInfo}}" style="text-align:center;">
+		<image src="{{userInfo.avatarUrl}}" style="width:200rpx;height:200rpx;" class="avatarImg"></image>
+		<view>{{userInfo.nickName}}</view>
+	</view>
+	<!-- 如果没有用户的授权信息，则点击立即登录，将showLoginDlg设置为可见（true） -->
+	<button wx:else bindtap="showLogin" class="button">
+		<image src="../../../images/mine/avatar-default.png" class="defaultImg"></image>
+		<text class="defaulText" >立即登录</text>
+	</button>
+	<!-- 自定义组件，实现获取微信授权后的公开信息，并将信息存入到数据库中 -->
+</view>
+<view class="function-catalog">
+	<view class="item" bindtap="gotoImprovePage">
+		<image class="icon" src="../../../images/mine/Improve-information.png"></image>
+		<label>修改信息</label>
+		<image class="arrow" src="../../../images/mine/right.png"></image>
+	</view>
+	<view class="item" bindtap="gotoWetCampPage">
+		<image class="icon" src="../../../images/mine/signin.png"></image>
+		<label>每日签到</label>
+		<image class="arrow" src="../../../images/mine/right.png"></image>
+	</view>
+	<view class="item" bindtap="gotoResumePage">
+		<image class="icon" src="../../../images/mine/resume.png"></image>
+		<label>我的简历</label>
+		<image class="arrow" src="../../../images/mine/right.png"></image>
+	</view>
+		<view class="item" bindtap="gotoConactUsPage">
+		<image class="icon" src="../../../images/mine/contact-us.png"></image>
+		<label>联系我们</label>
+		<image class="arrow" src="../../../images/mine/right.png"></image>
+	</view>
+</view>
