@@ -1,0 +1,95 @@
+/**index.wxss**/
+page {
+  height: auto;
+  font-family: "Microsoft YaHei";
+  background-color: #F0F0F0;
+  font-size: 25rpx;
+}
+
+.container {
+  border-bottom: 3rpx solid #ccc;
+  position: relative;
+  margin-top: 10rpx;
+  height: 300rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarImg {
+  border-radius: 50%;
+}
+
+.defaultImg {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+.defaulText {
+  font-family: cursive;
+}
+
+.function-catalog{
+  display: flex;
+  flex-direction: column;
+}
+
+/*表格*/
+.item {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background: white;
+  border-bottom: 0.5px solid lightgrey;
+}
+
+/*图标*/
+.item .icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+}
+
+/*文字*/
+.item label {
+  margin: 5px 0 0 10px;
+  font-size: 15px;
+  /*撑开label两边部分的距离*/
+  flex: 1;
+  /*垂直居中*/
+  margin: auto;
+}
+
+/*箭头*/
+.item .arrow {
+  width: 8px;
+  height: 9px;
+  margin: auto;
+  margin-top: 13px;
+}

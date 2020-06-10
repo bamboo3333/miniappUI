@@ -1,0 +1,13 @@
+<!-- 联系我们 -->
+<view class="container">
+	<view class="header">
+		<image src="../../../images/mine/background-default.jpg" mode="aspectFill"></image>
+	</view>
+	<view class="contact">
+		<text class="email">常用邮箱</text>
+		<text>0000@qq.com</text>
+	</view>
+	<view class="contact">
+		<text class="text">理想总在努力中.....</text>
+	</view>
+</view>

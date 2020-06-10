@@ -1,0 +1,26 @@
+	 <view class="resume-recommend-title">
+	 	<image src="../../../images/resume/recommend.png" />
+	 	<text class="title">简历推荐</text>
+	 </view>
+	 <view class="container">
+	 	<!-- 简历推荐 -->
+	 	<!-- 根据简历使用的次数进行推荐 -->
+
+	 	<view class="resume-title">
+	 		<view class="hr"></view>
+	 		<view class="resume-recommend">
+	 			<view class="item" bindtap="gotoPageResume">
+	 				<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2857793315,1593156858&fm=26&gp=0.jpg" />
+	 				<text class="item-text">软件工程师</text>
+	 			</view>
+	 			<view class="item" bindtap="gotoPageResume">
+	 				<image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1829900109,3973718518&fm=26&gp=0.jpg" />
+	 				<text class="item-text">AI工程师</text>
+	 			</view>
+	 			<view class="item" bindtap="gotoPageResume">
+	 				<image src="https://t9.baidu.com/it/u=2305251038,873310253&fm=193" />
+	 				<text class="item-text">算法工程师</text>
+	 			</view>
+	 		</view>
+	 	</view>
+	 </view>
