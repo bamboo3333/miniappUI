@@ -1,0 +1,31 @@
+<view class="container">
+	<view class="page">
+		<view class="title" style="float:left;margin-bottom:15px;">最新招聘</view>
+  <view wx:for="{{ fullTime }}">
+		<view class="item bdbt">
+			<!-- wx:for="{{courses}}" wx:key="" -->
+			<!-- AL工程师 -->
+			<navigator url="../hireCard/hireCard?index={{ index }}&type=1">
+				<view class="lt">
+					<image src="../../../images/hire-new/aI-engineer.png" />
+				</view>
+				<view class="rt">
+					<view class="price">{{ inte.title }}</view>
+					<view class="name">
+						招聘对象:
+						<text class="money">{{ item.type }}</text>
+					</view>
+					<view class="name">
+						描述:
+						<text class="money">{{ item.desc }}</text>
+					</view>
+					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
+						查看详情
+					</view>
+				</view>
+			</navigator>
+			<view class="line"></view>
+		</view>
+  </view>
+</view>
+	</view>
