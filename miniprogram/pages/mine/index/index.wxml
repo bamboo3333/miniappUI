@@ -1,18 +1,22 @@
-<!-- 资讯详情 -->
+<!-- 用户信息功能界面-->
 <view class="container">
-	<view class="mine">
-		<view class="avatar">
-			<image src="../../../images/mine/mine-avatar.jpg" />
-		</view>
-		<view class="personInfo">
-			<image src="../../../images/mine/mine-avatar.jpg"/>
-			<view>
-				<view>昵称：阳墨余</view>
-				<view class="acount">账号：1234</view>
-				<view class="email">邮箱：1234@qq.com</view>
-			</view>
-		</view>
-		<view class="content">
-		</view>
+	<!-- 如果当前以及获取到用的微信授权，这显示微信用户的昵称与头像 -->
+	<view wx:if="{{hasUserInfo}}" style="text-align:center;">
+		<image src="{{userInfo.avatarUrl}}" style="width:200rpx;height:200rpx;" class="avatarImg"></image>
+		<view>{{userInfo.nickName}}</view>
 	</view>
+	<!-- 如果没有用户的授权信息，则点击立即登录，将showLoginDlg设置为可见（true） -->
+	<button wx:else bindtap="showLogin" class="button">
+		<image src="{{defaultAvatar}}" class="defaultImg"></image>
+		<text class="defaulText" >立即登录</text>
+	</button>
+</view>
+<view class="function-catalog">
+ <block wx:for="{{items}}" wx:key="id">
+    <view class="item" data-url="{{item.url}}" bindtap="gotoPage">
+        <image class="icon" src="{{item.icon}}"></image>
+        <label>{{item.text}}</label>
+        <image class="arrow" src="{{item.right}}"></image>
+    </view>
+  </block>
 </view>

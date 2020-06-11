@@ -1,20 +1,11 @@
-// miniprogram/pages/resume/index/index.js
+// miniprogram/pages/wetCamp/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgURL:[
-      'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3878716296,1431912479&fm=26&gp=0.jpg',
-      'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110807267,2350271632&fm=26&gp=0.jpg',
-      'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2215815949,1750406079&fm=11&gp=0.jpg'
-    ],
-    indicatorDots: true,
-    vertical: true,
-    autoplay: true,
-    interval: 2000,
-    duration: 1000
+
   },
 
   /**
@@ -71,17 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  gotoPageResume:function(){
-    const url = '../detail/detail';
-    wx.navigateTo({
-      url: url,
-    });
-  },
-  gotopage:function(){
-    const url = '../resumeLibrary/resumeLibrary';
-    wx.navigateTo({
-      url: url,
-    });
   }
 })
