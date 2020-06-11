@@ -10,28 +10,28 @@
 	<view class="line"></view>
 	<view class="resume-title">
 		<view class="resume-recommend-title">
-			<image src="../../../images/resume/classification.png" />
+			<image src="{{classificationIcon}}" />
 			<text class="title">简历分类</text>
 		</view>
 		<view class="hr"></view>
-		<view class="unav">
-			<view class="navlist" bindtap="gotopage">
-				<view class="navthumb">
-					<image src="../../../images/hire-new/trainee.png" mode="scaleToFill"></image>
+		<view class="resume-nav">
+			<view class="nav-list" bindtap="gotopage">
+				<view class="nav">
+					<image src="{{trainee.url}}" mode="scaleToFill"></image>
 				</view>
-				<view class="navname">实习生</view>
+				<view class="nav-text">{{trainee.text}}</view>
 			</view>
-			<view class="navlist" bindtap="gotopage">
-				<view class="navthumb">
-					<image src="../../../images/hire-new/fullTime.png" mode="scaleToFill"></image>
+			<view class="nav-list" bindtap="gotopage">
+				<view class="nav">
+					<image src="{{fullTime.url}}" mode="scaleToFill"></image>
 				</view>
-				<view class="navname">全职</view>
+				<view class="nav-text">{{fullTime.text}}</view>
 			</view>
-			<view class="navlist" bindtap="gotopage">
-				<view class="navthumb">
-					<image src="../../../images/hire-new/partTimeJob.png" mode="scaleToFill"></image>
+			<view class="nav-list" bindtap="gotopage">
+				<view class="nav">
+					<image src="{{partTimeJob.url}}" mode="scaleToFill"></image>
 				</view>
-				<view class="navname">兼职</view>
+				<view class="nav-text">{{partTimeJob.text}}</view>
 			</view>
 		</view>
 	</view>
@@ -42,7 +42,7 @@
 		<!-- 根据简历使用的次数进行推荐 -->
 		<view class="resume-title">
 			<view class="resume-recommend-title">
-				<image src="../../../images/resume/recommend.png" />
+				<image src="{{recommend}}" />
 				<text class="title">简历推荐</text>
 			</view>
 			<view class="hr"></view>

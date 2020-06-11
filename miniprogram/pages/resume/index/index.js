@@ -14,7 +14,24 @@ Page({
     vertical: true,
     autoplay: true,
     interval: 2000,
-    duration: 1000
+    duration: 1000,
+    // 简历分类
+    trainee:{
+      url:'../../../images/hire-new/trainee.png',
+      text:'实习生'
+    },
+    fullTime:{
+      url:'../../../images/hire-new/fullTime.png',
+      text:'全职'
+    },
+    partTimeJob:{
+      url:'../../../images/hire-new/partTimeJob.png',
+      text:'兼职'
+    },
+      // icon
+      classificationIcon:'../../../images/resume/classification.png',
+      recommend:'../../../images/resume/recommend.png'
+
   },
 
   /**

@@ -5,6 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    describe:'../../../images/wetCamp/describe.png',
+    example:'../../../images/wetCamp/example.png',
+    remarks:'../../../images/wetCamp/remarks.png',
+    link:'../../../images/wetCamp/link.png',
+    comment:'../../../images/wetCamp/comment.png',
+    release:'../../../images/wetCamp/release.png'
 
   },
 

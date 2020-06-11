@@ -76,12 +76,12 @@
   font-size: 26rpx;
 }
 
-.item .rt .price {
+.item .rt .topic {
   line-height: 40rpx;
   height: 40rpx;
 }
 
-.price .money {
+.topic .text {
   color: red;
   font-weight: bold;
   font-size: 26rpx;

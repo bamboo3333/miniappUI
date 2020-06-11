@@ -45,6 +45,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10rpx;
   width: 100%;
   height: auto;
 }
@@ -57,6 +59,7 @@
 }
 
 .item-text {
+  margin-top: 10rpx;
   font-size: 35rpx;
   font-family: "Microsoft YaHei";
   color: #1296db;
