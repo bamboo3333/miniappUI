@@ -10,10 +10,15 @@ page {
   height: auto;
 }
 
+.slider{
+  width: 100%;
+  height: 450rpx;
+}
+
 
 .slide-image {
   width: 100%;
-  height: 500rpx;
+  height: 450rpx;
 }
 
 .line {

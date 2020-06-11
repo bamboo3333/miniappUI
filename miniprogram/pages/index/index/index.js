@@ -7,7 +7,7 @@ Page({
    */
   data: {
     // 背景图片
-    bcImage:'../../../images/hire-new/new-header.png',
+    bcImage:'../../../images/hire-new/bc.png',
     searchImage:'../../../images/hire-new/search.png',
     // 招聘类别
     items:[

@@ -37,7 +37,7 @@
 						时间：
 						<text class="text">60分钟</text>
 					</view>
-					<view class="text">
+					<view class="name">
 						题目类型:
 						<text class="text">数据结构&算法</text>
 					</view>
