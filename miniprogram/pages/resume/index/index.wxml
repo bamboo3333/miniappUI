@@ -15,26 +15,15 @@
 		</view>
 		<view class="hr"></view>
 		<view class="resume-nav">
-			<view class="nav-list" bindtap="gotopage">
-				<view class="nav">
-					<image src="{{trainee.url}}" mode="scaleToFill"></image>
-				</view>
-				<view class="nav-text">{{trainee.text}}</view>
+			<block wx:for="{{items}}" wx:key="id">
+				<navigator class="nav-list" url="{{item.url}}">
+					<image src="{{item.icon}}" />
+					<text class="nav-text">{{item.text}}</text>
+				</navigator>
+			</block>
 			</view>
-			<view class="nav-list" bindtap="gotopage">
-				<view class="nav">
-					<image src="{{fullTime.url}}" mode="scaleToFill"></image>
-				</view>
-				<view class="nav-text">{{fullTime.text}}</view>
-			</view>
-			<view class="nav-list" bindtap="gotopage">
-				<view class="nav">
-					<image src="{{partTimeJob.url}}" mode="scaleToFill"></image>
-				</view>
-				<view class="nav-text">{{partTimeJob.text}}</view>
-			</view>
-		</view>
 	</view>
+
 	<view class="line"></view>
 
 	<view class="container">
@@ -47,15 +36,15 @@
 			</view>
 			<view class="hr"></view>
 			<view class="resume-recommend">
-				<view class="item"  bindtap="gotoPageResume">
+				<view class="item" bindtap="gotoPageResume">
 					<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2857793315,1593156858&fm=26&gp=0.jpg" />
 					<text class="item-text">软件工程师</text>
 				</view>
-				<view class="item"  bindtap="gotoPageResume">
+				<view class="item" bindtap="gotoPageResume">
 					<image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1829900109,3973718518&fm=26&gp=0.jpg" />
 					<text class="item-text">AI工程师</text>
 				</view>
-				<view class="item"  bindtap="gotoPageResume">
+				<view class="item" bindtap="gotoPageResume">
 					<image src="https://t9.baidu.com/it/u=2305251038,873310253&fm=193" />
 					<text class="item-text">算法工程师</text>
 				</view>

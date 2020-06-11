@@ -39,7 +39,7 @@
 					</view>
 					<view class="text">
 						题目类型:
-						<text class="money">数据结构&算法</text>
+						<text class="text">数据结构&算法</text>
 					</view>
 					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
 						查看题目

@@ -6,6 +6,28 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // 背景图片
+    bcImage:'../../../images/hire-new/new-header.png',
+    searchImage:'../../../images/hire-new/search.png',
+    // 招聘类别
+    items:[
+      {
+        url:'../trainee/trainee',
+        icon:'../../../images/hire-new/trainee-default.png',
+        text:'实习生'
+      },
+      {
+        url:'../fullTime/fullTime',
+        icon:'../../../images/hire-new/fullTime-default.png',
+        text:'全职'
+      },
+      {
+        url:'../partTimeJob/partTimeJob',
+        icon:'../../../images/hire-new/partTimeJob-default.png',
+        text:'兼职'
+      }
+    ],
+
     isInput:false,
     inputData:"",
     number:0,

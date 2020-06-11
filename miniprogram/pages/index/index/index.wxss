@@ -85,7 +85,7 @@ page {
   background-color: #fff;
 }
 
-.hire-trainee {
+.hire {
   width: 200rpx;
   height: 150rpx;
   display: flex;
@@ -94,35 +94,7 @@ page {
   align-items: center;
 }
 
-.hire-trainee image {
-  width: 100rpx;
-  height: 100rpx;
-}
-
-.hire-fullTime {
-  width: 200rpx;
-  height: 150rpx;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hire-fullTime image {
-  width: 100rpx;
-  height: 100rpx;
-}
-
-.hire-partTimeJob {
-  width: 200rpx;
-  height: 150rpx;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hire-partTimeJob image {
+.hire image {
   width: 100rpx;
   height: 100rpx;
 }
