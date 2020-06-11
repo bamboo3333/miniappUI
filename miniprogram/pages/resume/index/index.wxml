@@ -15,13 +15,18 @@
 		</view>
 		<view class="hr"></view>
 		<view class="resume-nav">
-			<block wx:for="{{items}}" wx:key="id">
-				<navigator class="nav-list" url="{{item.url}}">
-					<image src="{{item.icon}}" />
-					<text class="nav-text">{{item.text}}</text>
-				</navigator>
-			</block>
-			</view>
+			<!-- 实现左右滑动 -->
+			<swiper class="swipder" next-margin="{{swiperData.next}}rpx" current-item-id="{{currentIndex}}"  previous-margin="{{swiperData.previous}}rpx" bindchange="swiperChange">
+				<block wx:for="{{items}}" wx:key="{{index}}" >
+					<swiper-item class="slide-item">
+						<navigator class="nav-list" url="{{item.url}}">
+							<image src="{{item.icon}}"/>
+							<text class="nav-text">{{item.text}}</text>
+						</navigator>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
 	</view>
 
 	<view class="line"></view>

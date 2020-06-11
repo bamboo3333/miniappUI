@@ -15,7 +15,9 @@ Page({
     autoplay: true,
     interval: 2000,
     duration: 1000,
-    // 简历分类
+    
+
+    // 简历分类(左右滑动)
     items:[
       {
         url:'',
@@ -33,6 +35,11 @@ Page({
         icon:'../../../images/hire-new/partTimeJob.png'
       }
     ],
+    // swiperData:{
+    //   previous:28,
+    //   next:400
+    // },
+    currentIndex:0,
    
      // icon
       classificationIcon:'../../../images/resume/classification.png',
