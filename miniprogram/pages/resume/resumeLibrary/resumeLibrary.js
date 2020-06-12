@@ -9,6 +9,31 @@ Page({
 
   },
 
+
+// 实现点击下载
+
+download:function(e){
+  const url = e.currentTarget.dataset.url
+  // 下载文件
+  wx.downloadFile({
+    url: url,
+    success(res){
+      if(res.statusCode ==200){
+        console.log(res.tempFilePath)
+        wx.openDocument({
+          filePath:res.tempFilePath,
+          success(res){
+            console.log(res)
+          },
+          fail(res){
+            console.log(res)
+          }
+        })
+      }
+    }
+  })
+},
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -35,8 +35,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rpx;
   padding: 0rpx;
+  width: 100%;
 }
 
 
@@ -45,8 +45,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 10rpx;
+  margin-top: 5rpx;
   width: 100%;
   height: auto;
 }
@@ -58,11 +59,10 @@
   border: 2rpx solid #ccc;
 }
 
-.item-text {
-  margin-top: 10rpx;
+.item text {
   font-size: 35rpx;
-  font-family: "Microsoft YaHei";
-  color: #1296db;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #020202;
 }
 
 /* 设置底部样式 */
