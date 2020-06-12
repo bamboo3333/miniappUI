@@ -5,13 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    resumeModel:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    var resModels = wx.getStorageSync("traineeModel");
+    console.log(resModels);
+    that.setData({
+      resumeModel:resModels
+    })
 
   },
 
@@ -63,10 +69,11 @@ Page({
   onShareAppMessage: function () {
 
   },
-  gotoPageResume:function(){
+  gotoPageResume:function(e){
+    var index = e.currentTarget.dataset["index"];
     const url = '../detail/detail';
     wx.navigateTo({
-      url: url,
+      url: url+'?index='+index,
     })
   }
 })

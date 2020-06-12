@@ -1,4 +1,6 @@
-<view class="container">
-  <text>软件工程师</text>
-	<image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1829900109,3973718518&fm=26&gp=0.jpg" />
-</view>
+<block>
+  <web-view src="https://www.job592.com/doc/5b1cd54dcd24a5a39f79e435.html"></web-view>
+</block>
+
+
+

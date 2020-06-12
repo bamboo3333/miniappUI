@@ -18,7 +18,7 @@ App({
     this.globalData = {}
   },
 /**
- * 
+ * 获取新闻信息
  */
   getMessage: function (jobType,typeId) {
     var that = this;
@@ -41,5 +41,30 @@ App({
       complete: function (res) { },
     })
   },
-
+/**
+ * 获取简历模板
+ */
+  getResumeMsg: function (resumeType,typeId) {
+    var that = this;
+    wx.request({
+      url: "http://localhost:8080/resume/all",
+      data: {typeId:typeId},
+      header: {
+        'content-type': 'application/json'
+      },
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      success: function (res) {
+        var data = res.data.data;
+        wx.setStorageSync(resumeType, data);
+      },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+globalData:{
+  hasUserInfo:false,
+  userInfo:{}
+}
 })

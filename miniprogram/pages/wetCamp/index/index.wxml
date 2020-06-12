@@ -2,20 +2,21 @@
 <view class="container">
 	<view class="page">
 		<view class="title" style="float:left;margin-bottom:15px;">今日训练</view>
-		<view class="item bdbt">
-			<navigator url="../../wetCamp/detail/detail">
+    <view wx:for="{{ trains }}">
+    <view class="item bdbt">
+			<navigator url="../../wetCamp/detail/detail?index={{ index }}">
 				<view class="lt">
-					<image src="https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=932310317,3208700783&fm=74&app=80&f=PNG&size=f121,121?sec=1880279984&t=9b05419a680969090b2716d216e1dbe0" />
+					<image src="{{ item.titleImg }}" />
 				</view>
 				<view class="rt">
-					<view class="price">百度2019年笔试三十题</view>
+					<view class="price">{{ item.titleName }}</view>
 					<view class="name">
 						时间：
-						<text class="money">30分钟</text>
+						<text class="money">{{ item.titleTime }}</text>
 					</view>
 					<view class="name">
 						题目类型:
-						<text class="money">数据结构</text>
+						<text class="money">{{ item.titleType }}</text>
 					</view>
 					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
 						查看题目
@@ -23,6 +24,8 @@
 				</view>
 			</navigator>
 		</view>
+    </view>
+		
 		<view class="item bdbt">
 			<view class="line"></view>
 			<navigator url="../../wetCamp/detail/detail">

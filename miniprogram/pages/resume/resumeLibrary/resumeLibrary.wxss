@@ -45,8 +45,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: auto;
+  width: 300rpx;
+  height: 400rpx;
 }
 
 .item image {

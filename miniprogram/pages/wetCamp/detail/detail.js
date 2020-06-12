@@ -5,13 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    train:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    var index = options.index;
+    var trains = wx.getStorageSync("trains");
+    var train = trains[index];
+    console.log(train);
+    that.setData({
+      train:train
+    })
 
   },
 
