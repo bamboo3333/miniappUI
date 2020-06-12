@@ -2,12 +2,23 @@
 <view class="container">
 	<view class="page">
 		<view class="title" style="float:left;margin-bottom:15px;">今日训练</view>
-		<view class="item bdbt">
-			<navigator url="../../wetCamp/detail/detail">
+    <view wx:for="{{ trains }}">
+    <view class="item bdbt">
+			<navigator url="../../wetCamp/detail/detail?index={{ index }}">
 				<view class="lt">
-					<image src="https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=932310317,3208700783&fm=74&app=80&f=PNG&size=f121,121?sec=1880279984&t=9b05419a680969090b2716d216e1dbe0" />
+					<image src="{{ item.titleImg }}" />
 				</view>
 				<view class="rt">
+<<<<<<< HEAD
+					<view class="price">{{ item.titleName }}</view>
+					<view class="name">
+						时间：
+						<text class="money">{{ item.titleTime }}</text>
+					</view>
+					<view class="name">
+						题目类型:
+						<text class="money">{{ item.titleType }}</text>
+=======
 					<view class="topic">百度2019年笔试三十题</view>
 					<view class="name">
 						时间：
@@ -16,6 +27,7 @@
 					<view class="name">
 						题目类型:
 						<text class="text">数据结构</text>
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
 					</view>
 					<view style="border:1rpx solid #000;" class="baoming">
 						查看题目
@@ -23,8 +35,13 @@
 				</view>
 			</navigator>
 		</view>
+<<<<<<< HEAD
+    </view>
+		
+=======
 
 
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
 		<view class="item bdbt">
 			<view class="line"></view>
 			<navigator url="../../wetCamp/detail/detail">

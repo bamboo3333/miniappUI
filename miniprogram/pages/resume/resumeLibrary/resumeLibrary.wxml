@@ -7,6 +7,7 @@
 	 	<!-- 根据简历使用的次数进行推荐 -->
 
 	 	<view class="resume-title">
+<<<<<<< HEAD
 	 	<view class="hr"></view>
 			<view class="resume-recommend">
 				<view class="item" bindtap="download" data-url="http://www.yangmoyu.com/resumeFile/file-31.doc">
@@ -22,5 +23,17 @@
 					<text class="item-text">算法工程师</text>
 				</view>
 			</view>
+=======
+	 		<view class="hr"></view>
+	 		<view class="resume-recommend">
+        <view wx:for="{{ resumeModel }}">
+          <view class="item" bindtap="gotoPageResume" data-index="{{ index }}">
+	 				<image src="{{ item.modelImg}}" />
+	 				<text class="item-text">{{ item.resumeType }}</text>
+	 			</view>
+        </view>
+	 			
+	 		</view>
+>>>>>>> 88098fe7b91d863ec00245044e0d570dfa4d5e4d
 	 	</view>
 	 </view>

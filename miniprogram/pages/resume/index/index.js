@@ -1,4 +1,5 @@
 // miniprogram/pages/resume/index/index.js
+var app = getApp();
 Page({
 
   /**
@@ -15,6 +16,9 @@ Page({
     autoplay: true,
     interval: 2000,
     duration: 1000,
+<<<<<<< HEAD
+    recommend:[]
+=======
     
 
     // 简历分类(左右滑动)
@@ -81,19 +85,32 @@ Page({
         }
       })
     }
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    app.getResumeMsg("traineeModel",0);
   },
+ 
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    // 后面再优化
+    var models = wx.getStorageSync("traineeModel");
+    var recommend = [];
+    console.log(models)
+    for(var i=0;i<3;i++){
+      recommend[i] = models[i];
+    }
+    this.setData({
+      recommend: recommend
+    })
 
   },
 
@@ -105,45 +122,16 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面隐藏
+   * 获取后端简历信息
    */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
+ 
   gotoPageResume:function(){
     const url = '../detail/detail';
     wx.navigateTo({
       url: url,
     });
   },
+<<<<<<< HEAD
 
  download:function(e){
       const url = e.currentTarget.dataset.url
@@ -167,6 +155,11 @@ Page({
       })
   },
 
+=======
+  /**
+   * 页面跳转
+   */
+>>>>>>> 88098fe7b91d863ec00245044e0d570dfa4d5e4d
   gotopage:function(){
     const url = '../resumeLibrary/resumeLibrary';
     wx.navigateTo({

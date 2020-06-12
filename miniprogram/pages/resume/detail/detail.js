@@ -1,36 +1,22 @@
-// miniprogram/pages/wetCamp/detail/detail.js
+// miniprogram/pages/resume/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-<<<<<<< HEAD
-    train:{}
-=======
-    describe:'../../../images/wetCamp/describe.png',
-    example:'../../../images/wetCamp/example.png',
-    remarks:'../../../images/wetCamp/remarks.png',
-    link:'../../../images/wetCamp/link.png',
-    comment:'../../../images/wetCamp/comment.png',
-    release:'../../../images/wetCamp/release.png'
-
->>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
+    model:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
     var index = options.index;
-    var trains = wx.getStorageSync("trains");
-    var train = trains[index];
-    console.log(train);
-    that.setData({
-      train:train
-    })
-
+    var traineeModel = wx.getStorageSync("traineeModel");
+    var model = traineeModel[index];
+    this.data.model = model;
+    console.log(this.data.model);
   },
 
   /**

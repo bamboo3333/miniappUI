@@ -45,11 +45,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   border: 1px solid #ccc;
+=======
+<<<<<<< HEAD
+  width: 300rpx;
+  height: 400rpx;
+=======
+  border: 2px solid #ccc;
+>>>>>>> 88098fe7b91d863ec00245044e0d570dfa4d5e4d
   border-radius: 10rpx;
   margin-top: 5rpx;
   width: 100%;
   height: auto;
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
 }
 
 .item image {

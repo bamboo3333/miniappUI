@@ -125,10 +125,15 @@ page {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   margin-top: 20rpx;
   width: 90%;
   height: auto;
   border-bottom:4rpx solid #020202 ;
+=======
+  width: 300rpx;
+  height: 500rpx;
+>>>>>>> 88098fe7b91d863ec00245044e0d570dfa4d5e4d
 }
 
 .item image {

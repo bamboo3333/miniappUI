@@ -1,4 +1,5 @@
 // miniprogram/pages/mine/index/index.js
+var app = getApp();
 Page({
 
   /**
@@ -67,8 +68,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.userAuthorized();
     
+    
+  },
+  onReady: function(){
+    this.userAuthorized();
   },
 
 // 获取openid
@@ -93,7 +97,8 @@ getOpenid:function(){
         that.setData({
           openid:response.data.openid
         })
-        console.log(response)
+        console.log(123);
+        console.log(response);
       },
       fail:function(data){
         console.log(data)
@@ -121,18 +126,26 @@ getOpenid:function(){
 
   // 当页面加载时候就进行授权处理
   userAuthorized:function(){
+    var that = this;
+    console.log(that.data.items);
       wx.getSetting({
         success: (res) => {
           if(res.authSetting['scope.userInfo']){
             wx.getUserInfo({
               success: data => {
-                  this.hasUserInfo = true
-                  this.userInfo = data.userInfo
-                  console.log(data.userInfo)
+                // console.log(data);
+                that.setData({
+                  userInfo: data.userInfo,
+                  hasUserInfo: true
+                });
+                app.globalData.hasUserInfo = true;
+                app.globalData.userInfo = data.userInfo;
               },
             })
           }else{
-            this.hasUserInfo=false
+            that.setData({
+              hasUserInfo:false
+            })
           }
         },
       })

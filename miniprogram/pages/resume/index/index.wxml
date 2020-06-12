@@ -41,8 +41,19 @@
 			</view>
 			<view class="hr"></view>
 			<view class="resume-recommend">
+<<<<<<< HEAD
 				<view class="item" bindtap="download" data-url="http://www.yangmoyu.com/resumeFile/file-31.doc">
 					<image src="http://www.yangmoyu.com/resumeImage/image-31.png" />
+=======
+<<<<<<< HEAD
+      <view wx:for="{{ recommend }}">
+        <view class="item"  bindtap="gotoPageResume" data-index="{{ index }}">
+					<image src="{{ item.modelImg }}" />
+					<text class="item-text">{{ item.resumeType }}</text>
+=======
+				<view class="item" bindtap="gotoPageResume">
+					<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2857793315,1593156858&fm=26&gp=0.jpg" />
+>>>>>>> 88098fe7b91d863ec00245044e0d570dfa4d5e4d
 					<text class="item-text">软件工程师</text>
 				</view>
 				<view class="item" bindtap="download" data-url="http://www.yangmoyu.com/resumeFile/file-28.doc">
@@ -52,7 +63,10 @@
 				<view class="item" bindtap="download" data-url='http://www.yangmoyu.com/resumeFile/file-29.doc'>
 					<image src="http://www.yangmoyu.com/resumeImage/image-29.png" />
 					<text class="item-text">算法工程师</text>
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
 				</view>
+      </view>
+
 			</view>
 		</view>
 		<foot id="foot"></foot>

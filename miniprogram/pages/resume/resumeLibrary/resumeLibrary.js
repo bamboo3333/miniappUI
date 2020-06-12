@@ -5,8 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
+    resumeModel:[]
+=======
     recommend:'../../../images/resume/recommend.png',
 
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
   },
 
 
@@ -38,6 +42,12 @@ download:function(e){
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    var resModels = wx.getStorageSync("traineeModel");
+    console.log(resModels);
+    that.setData({
+      resumeModel:resModels
+    })
 
   },
 
@@ -89,10 +99,11 @@ download:function(e){
   onShareAppMessage: function () {
 
   },
-  gotoPageResume:function(){
+  gotoPageResume:function(e){
+    var index = e.currentTarget.dataset["index"];
     const url = '../detail/detail';
     wx.navigateTo({
-      url: url,
+      url: url+'?index='+index,
     })
   }
 })
