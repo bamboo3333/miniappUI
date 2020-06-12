@@ -37,7 +37,7 @@
 			<view class="hire-recommend">
 				<view wx:for="{{ hotNews }}">
 					<view class="hire-recommend-left">
-						<navigator url="../hireCard/hireCard?index={{ index }}&type=4" class="recommend-one">
+						<navigator url="../hireLibrary/hireLibrary?index={{ index }}&type=4" class="recommend-one">
 							<image src="{{ item.coverImg }}"></image>
 						</navigator>
 					</view>
@@ -53,7 +53,7 @@
 		<!-- 今日校招 -->
 		<view wx:for="{{ todayNews }}">
 			<view class="hire-today">
-				<navigator url="../hireCard/hireCard?index={{ index }}&type=3" hover-class="navigator-hover" class="con-item">
+				<navigator url="../hireLibrary/hireLibrary?index={{ index }}&type=3" hover-class="navigator-hover" class="con-item">
 					<image src="{{ item.coverImg }}" class="actionpic"></image>
 					<view class="clear"></view>
 				</navigator>

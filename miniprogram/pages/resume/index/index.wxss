@@ -41,7 +41,7 @@ page {
 .resume-nav {
   background: #fff;
   width: 100%;
-  height: 210rpx;
+  height: 230rpx;
   padding: 20rpx 0;
   display: flex;
   flex-direction: row;
@@ -70,7 +70,7 @@ page {
 
 .nav-list {
   float: left;
-  width: 63%;
+  width: 93%;
   margin: auto;
   text-align: center;
   margin-bottom: 1.5em;
@@ -125,21 +125,22 @@ page {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin-top: 20rpx;
+  width: 90%;
   height: auto;
+  border-bottom:4rpx solid #020202 ;
 }
 
 .item image {
-  width: 82%;
-  height: 591rpx;
+  width: 100%;
+  height: 700rpx;
   border-radius: 40rpx;
-  border: 2rpx solid #ccc;
 }
 
-.item-text {
+.item text {
   font-size: 35rpx;
-  font-family: "Microsoft YaHei";
-  color: #1296db;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #020202;
 }
 
 /* 设置底部样式 */

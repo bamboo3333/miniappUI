@@ -38,9 +38,30 @@ Page({
       }
     ],
 
-
-
   },
+
+  // download:function(){
+  //     const url = 'http://www.yangmoyu.com/简历1.doc'
+  //     // 下载文件
+  //     wx.downloadFile({
+  //       url: url,
+  //       success(res){
+  //         if(res.statusCode ==200){
+  //           console.log(res.tempFilePath)
+  //           wx.openDocument({
+  //             filePath:res.tempFilePath,
+  //             success(res){
+  //               console.log(res)
+  //             },
+  //             fail(res){
+  //               console.log(res)
+  //             }
+  //           })
+  //         }
+  //       }
+
+  //     })
+  // },
 
   /**
    * 生命周期函数--监听页面加载

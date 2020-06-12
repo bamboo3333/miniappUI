@@ -1,0 +1,45 @@
+<!-- 招聘资讯标签卡 -->
+<view class="container">
+	<view class="item bdbt">
+		<navigator url="../detail/detail">
+			<view class="lt">
+				<image src="https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=932310317,3208700783&fm=74&app=80&f=PNG&size=f121,121?sec=1880279984&t=9b05419a680969090b2716d216e1dbe0" />
+			</view>
+			<view class="rt">
+				<view class="topic">前端工程师</view>
+				<view class="name">
+					发布者：
+					<text class="text">美团</text>
+				</view>
+				<view class="name">
+					招聘类型:
+					<text class="text">实习生</text>
+				</view>
+				<view style="border:1rpx solid;" class="baoming">
+					了解详情
+				</view>
+			</view>
+		</navigator>
+	</view>
+    <view class="item bdbt">
+		<navigator url="../detail/detail">
+			<view class="lt">
+				<image src="https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=932310317,3208700783&fm=74&app=80&f=PNG&size=f121,121?sec=1880279984&t=9b05419a680969090b2716d216e1dbe0" />
+			</view>
+			<view class="rt">
+				<view class="topic">算法工程师</view>
+				<view class="name">
+					发布者：
+					<text class="text">百度</text>
+				</view>
+				<view class="name">
+					招聘类型:
+					<text class="text">全职生</text>
+				</view>
+				<view style="border:1rpx solid white;" class="baoming">
+					了解详情
+				</view>
+			</view>
+		</navigator>
+	</view>
+</view>

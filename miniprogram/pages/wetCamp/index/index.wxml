@@ -17,7 +17,7 @@
 						题目类型:
 						<text class="text">数据结构</text>
 					</view>
-					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
+					<view style="border:1rpx solid #000;" class="baoming">
 						查看题目
 					</view>
 				</view>
@@ -41,7 +41,7 @@
 						题目类型:
 						<text class="text">数据结构&算法</text>
 					</view>
-					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
+					<view style="border:1rpx solid #000;" class="baoming">
 						查看题目
 					</view>
 				</view>
@@ -63,7 +63,7 @@
 						题目类型:
 						<text class="text">数据结构&算法</text>
 					</view>
-					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
+					<view style="border:1rpx solid #000;" class="baoming">
 						查看题目
 					</view>
 				</view>
@@ -85,7 +85,7 @@
 						题目类型:
 						<text class="text">前端</text>
 					</view>
-					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
+					<view style="border:1rpx solid #000;" class="baoming">
 						查看题目
 					</view>
 				</view>
@@ -115,7 +115,6 @@
 		</view>
 		<view class="item bdbt">
 			<view class="line"></view>
-
 		</view>
 	</view>
 </view>

@@ -1,8 +1,7 @@
-.container {
+page {
   background-color: #f2f2f2;
 }
-
-.page {
+.container{
   width: 96%;
   height: auto;
   background: #fff;
@@ -11,10 +10,6 @@
   margin-top: 20rpx;
 }
 
-.title {
-  font-size: 18px;
-  color: #000;
-}
 
 .line {
   height: 1rpx;
@@ -67,8 +62,10 @@
   bottom: 10rpx;
   line-height: 50rpx;
   text-align: center;
-  border-radius: 20rpx;
+  border-radius: 5rpx;
   font-size: 26rpx;
+  color: white;
+  background-color: #57bead;
 }
 
 .item .rt .topic {
@@ -81,3 +78,4 @@
   font-weight: bold;
   font-size: 26rpx;
 }
+

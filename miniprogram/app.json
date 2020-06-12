@@ -8,7 +8,7 @@
     "pages/index/partTimeJob/partTimeJob",
     "pages/index/fullTime/fullTime",
     "pages/index/detail/detail",
-    "pages/index/hireCard/hireCard",
+    "pages/index/hireLibrary/hireLibrary",
     "pages/mine/improveInformation/improveInformation",
     "pages/mine/contactUs/contactUs",
     "pages/resume/resumeLibrary/resumeLibrary",

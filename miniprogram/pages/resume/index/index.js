@@ -6,7 +6,7 @@ Page({
    */
   data: {
     imgURL:[
-      '../../../images/resume/slider-1.PNG',
+      '../../../images/resume/slider-1.jpg',
       '../../../images/resume/slider-2.jpg',
       '../../../images/resume/slider-3.jpg'
     ],
@@ -48,12 +48,13 @@ Page({
     ],
     swiperData:{
       previous:28,
-      next:400
+      next:500
     },
    
      // icon
       classificationIcon:'../../../images/resume/classification.png',
-      recommend:'../../../images/resume/recommend.png'
+      recommend:'../../../images/resume/recommend.png',
+      url:''
 
   },
   handleSwiperChange(e) {
@@ -143,6 +144,29 @@ Page({
       url: url,
     });
   },
+
+ download:function(e){
+      const url = e.currentTarget.dataset.url
+      // 下载文件
+      wx.downloadFile({
+        url: url,
+        success(res){
+          if(res.statusCode ==200){
+            console.log(res.tempFilePath)
+            wx.openDocument({
+              filePath:res.tempFilePath,
+              success(res){
+                console.log(res)
+              },
+              fail(res){
+                console.log(res)
+              }
+            })
+          }
+        }
+      })
+  },
+
   gotopage:function(){
     const url = '../resumeLibrary/resumeLibrary';
     wx.navigateTo({

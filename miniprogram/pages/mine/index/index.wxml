@@ -6,7 +6,7 @@
 		<view>{{userInfo.nickName}}</view>
 	</view>
 	<!-- 如果没有用户的授权信息，则点击立即登录，将showLoginDlg设置为可见（true） -->
-	<button wx:else bindtap="showLogin" class="button">
+	<button wx:else bindtap="download" class="button">
 		<image src="{{defaultAvatar}}" class="defaultImg"></image>
 		<text class="defaulText" >立即登录</text>
 	</button>
