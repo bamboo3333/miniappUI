@@ -148,23 +148,35 @@ Page({
  download:function(e){
       const url = e.currentTarget.dataset.url
       // 下载文件
-      wx.downloadFile({
-        url: url,
-        success(res){
-          if(res.statusCode ==200){
-            console.log(res.tempFilePath)
-            wx.openDocument({
-              filePath:res.tempFilePath,
-              success(res){
-                console.log(res)
-              },
-              fail(res){
-                console.log(res)
+    wx.showModal({
+      title:'简历下载',
+      content:'是否下载该简历？',
+      success(res){
+        if(res.confirm){
+          wx.downloadFile({
+            url: url,
+            success(res){
+              if(res.statusCode ==200){
+                console.log(res.tempFilePath)
+                wx.openDocument({
+                  filePath:res.tempFilePath,
+                  success(res){
+                    console.log(res)
+                  },
+                  fail(res){
+                    console.log(res)
+                  }
+                })
               }
-            })
-          }
+            }
+          })
+        }else{
+          return 
         }
-      })
+      }
+
+
+    })
   },
 
   gotopage:function(){
