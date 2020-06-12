@@ -1,5 +1,5 @@
 	<view class="content">
-		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="slider">
 			<block wx:for="{{imgURL}}" wx:key="">
 				<swiper-item>
 					<image src="{{item}}" class="slide-image" />
@@ -10,31 +10,25 @@
 	<view class="line"></view>
 	<view class="resume-title">
 		<view class="resume-recommend-title">
-			<image src="../../../images/resume/classification.png" />
+			<image src="{{classificationIcon}}" />
 			<text class="title">简历分类</text>
 		</view>
 		<view class="hr"></view>
-		<view class="unav">
-			<view class="navlist" bindtap="gotopage">
-				<view class="navthumb">
-					<image src="../../../images/hire-new/trainee.png" mode="scaleToFill"></image>
-				</view>
-				<view class="navname">实习生</view>
-			</view>
-			<view class="navlist" bindtap="gotopage">
-				<view class="navthumb">
-					<image src="../../../images/hire-new/fullTime.png" mode="scaleToFill"></image>
-				</view>
-				<view class="navname">全职</view>
-			</view>
-			<view class="navlist" bindtap="gotopage">
-				<view class="navthumb">
-					<image src="../../../images/hire-new/partTimeJob.png" mode="scaleToFill"></image>
-				</view>
-				<view class="navname">兼职</view>
-			</view>
+		<view class="resume-nav">
+			<!-- 实现左右滑动 -->
+			<swiper class="swipder" next-margin="{{swiperData.next}}rpx" previous-margin="{{swiperData.previous}}rpx" bindchange="handleSwiperChange">
+				<block wx:for="{{items}}" wx:key="{{index}}" >
+					<swiper-item class="slide-item">
+						<navigator class="nav-list" url="{{item.url}}">
+							<image src="{{item.icon}}"/>
+							<text class="nav-text">{{item.text}}</text>
+						</navigator>
+					</swiper-item>
+				</block>
+			</swiper>
 		</view>
 	</view>
+
 	<view class="line"></view>
 
 	<view class="container">
@@ -42,15 +36,29 @@
 		<!-- 根据简历使用的次数进行推荐 -->
 		<view class="resume-title">
 			<view class="resume-recommend-title">
-				<image src="../../../images/resume/recommend.png" />
+				<image src="{{recommend}}" />
 				<text class="title">简历推荐</text>
 			</view>
 			<view class="hr"></view>
 			<view class="resume-recommend">
+<<<<<<< HEAD
       <view wx:for="{{ recommend }}">
         <view class="item"  bindtap="gotoPageResume" data-index="{{ index }}">
 					<image src="{{ item.modelImg }}" />
 					<text class="item-text">{{ item.resumeType }}</text>
+=======
+				<view class="item" bindtap="gotoPageResume">
+					<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2857793315,1593156858&fm=26&gp=0.jpg" />
+					<text class="item-text">软件工程师</text>
+				</view>
+				<view class="item" bindtap="gotoPageResume">
+					<image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1829900109,3973718518&fm=26&gp=0.jpg" />
+					<text class="item-text">AI工程师</text>
+				</view>
+				<view class="item" bindtap="gotoPageResume">
+					<image src="https://t9.baidu.com/it/u=2305251038,873310253&fm=193" />
+					<text class="item-text">算法工程师</text>
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
 				</view>
       </view>
 

@@ -7,16 +7,84 @@ Page({
    */
   data: {
     imgURL:[
-      'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3878716296,1431912479&fm=26&gp=0.jpg',
-      'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110807267,2350271632&fm=26&gp=0.jpg',
-      'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2215815949,1750406079&fm=11&gp=0.jpg'
+      '../../../images/resume/slider-1.PNG',
+      '../../../images/resume/slider-2.jpg',
+      '../../../images/resume/slider-3.jpg'
     ],
     indicatorDots: true,
     vertical: true,
     autoplay: true,
     interval: 2000,
     duration: 1000,
+<<<<<<< HEAD
     recommend:[]
+=======
+    
+
+    // 简历分类(左右滑动)
+    items:[
+      {
+        url:'../resumeLibrary/resumeLibrary',
+        text:'设计师',
+        icon:'../../../images/resume/design.jpg'
+      },
+      {
+        url:'../resumeLibrary/resumeLibrary',
+        text:'工程师',
+        icon:'../../../images/resume/engineer.jpg'
+      },
+      {
+        url:'../resumeLibrary/resumeLibrary',
+        text:'运维师',
+        icon:'../../../images/resume/Operation-and-maintenance.jpg'
+      },
+      {
+        url:'../resumeLibrary/resumeLibrary',
+        text:'测试师',
+        icon:'../../../images/resume/test.jpg'
+      },
+      {
+        url:'../resumeLibrary/resumeLibrary',
+        text:'产品经理',
+        icon:'../../../images/resume/product-manager.jpg'
+      }
+
+    ],
+    swiperData:{
+      previous:28,
+      next:400
+    },
+   
+     // icon
+      classificationIcon:'../../../images/resume/classification.png',
+      recommend:'../../../images/resume/recommend.png'
+
+  },
+  handleSwiperChange(e) {
+    const currentIndex = e.detail.current
+    if(currentIndex == 0) {
+      this.setData({
+        swiperDis: {
+          previous: 28,
+          next: 400
+        }
+      })
+    }else if(currentIndex == 1) {
+      this.setData({
+        swiperDis: {
+          previous: 214,
+          next: 214
+        }
+      })
+    }else if(currentIndex == 2) {
+      this.setData({
+        swiperDis: {
+          previous: 400,
+          next: 28
+        }
+      })
+    }
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
   },
 
   /**

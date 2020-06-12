@@ -12,3 +12,9 @@
   border-radius: 20rpx;
   border: 2rpx solid #ccc;
 }
+
+.content{
+  margin-top: 10px;
+  width:89%;
+  height: auto;
+}

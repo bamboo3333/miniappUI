@@ -3,5 +3,5 @@
     "foot":"../../../components/foot/foot"
   },
     "navigationBarTitleText": "招聘资讯",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
 }

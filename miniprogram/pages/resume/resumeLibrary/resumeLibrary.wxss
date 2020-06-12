@@ -45,8 +45,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   width: 300rpx;
   height: 400rpx;
+=======
+  border: 2px solid #ccc;
+  border-radius: 10rpx;
+  width: 100%;
+  height: auto;
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
 }
 
 .item image {
@@ -57,6 +64,7 @@
 }
 
 .item-text {
+  margin-top: 10rpx;
   font-size: 35rpx;
   font-family: "Microsoft YaHei";
   color: #1296db;

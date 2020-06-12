@@ -1,7 +1,7 @@
 	<view class="container">
 		<view class="content">
 			<view class="title">
-				<image src="../../../images/wetCamp/describe.png" mode="widthFix" />
+				<image src="{{describe}}" mode="widthFix" />
 				<text>题目描述</text>
 			</view>
 			<text class="text">{{ train.titleDesc }}
@@ -9,7 +9,7 @@
 		</view>
 		<view class="content">
 			<view class="title">
-				<image src="../../../images/wetCamp/example.png" mode="widthFix" />
+				<image src="{{example}}" mode="widthFix" />
 				<text>示例</text>
 			</view>
 			<text class="text">{{ train.titleExp }}
@@ -17,7 +17,7 @@
 		</view>
 		<view class="content">
 			<view class="title">
-				<image src="../../../images/wetCamp/remarks.png" mode="widthFix" style="width:7%" />
+				<image src="{{remarks}}" mode="widthFix" style="width:7%" />
 				<text>备注</text>
 			</view>
 			<text class="text">{{ train.titleRemark }}
@@ -25,14 +25,18 @@
 		</view>
 		<view class="content">
 			<view class="title">
-				<image src="../../../images/wetCamp/link.png" mode="widthFix" style="width:7%" />
+				<image src="{{link}}" mode="widthFix" style="width:7%" />
 				<text>题目链接</text>
 			</view>
+<<<<<<< HEAD
        <text class="text">{{ train.titleUrl }}</text>
+=======
+			<text class="text">https://www.nowcoder.com/practice</text>
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
 		</view>
 		<view class="comment">
-			<image src="../../../images/wetCamp/comment.png" />
+			<image src="{{comment}}" />
 			<input class="comment-input" placeholder=" 发布一下...."></input>
-			<image src="../../../images/wetCamp/release.png" />
+			<image src="{{release}}" bindtap="comment"/>
 		</view>
 	</view>

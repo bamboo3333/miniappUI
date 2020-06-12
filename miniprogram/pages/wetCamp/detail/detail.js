@@ -5,7 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     train:{}
+=======
+    describe:'../../../images/wetCamp/describe.png',
+    example:'../../../images/wetCamp/example.png',
+    remarks:'../../../images/wetCamp/remarks.png',
+    link:'../../../images/wetCamp/link.png',
+    comment:'../../../images/wetCamp/comment.png',
+    release:'../../../images/wetCamp/release.png'
+
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
   },
 
   /**

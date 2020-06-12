@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     resumeModel:[]
+=======
+    recommend:'../../../images/resume/recommend.png',
+
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
   },
 
   /**

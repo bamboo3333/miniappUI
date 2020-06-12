@@ -4,38 +4,26 @@ page {
   font-family: "Microsoft YaHei";
 }
 
-.container {
+.content {
   margin: 0rpx;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: auto;
+}
+
+.slider {
+  width: 100%;
+  height: 450rpx;
 }
 
 
 .slide-image {
   width: 100%;
-  height: 500rpx;
+  height: 450rpx;
 }
 
 .line {
   height: 25rpx;
   background: #eee;
-}
-
-.navlist {
-  float: left;
-  width: 25%;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 1.5em;
-}
-
-.navthumb image {
-  width: 38px;
-  height: 38px;
 }
 
 .title {
@@ -50,10 +38,10 @@ page {
   margin-bottom: 10px;
 }
 
-.unav {
+.resume-nav {
   background: #fff;
   width: 100%;
-  height: 150rpx;
+  height: 210rpx;
   padding: 20rpx 0;
   display: flex;
   flex-direction: row;
@@ -61,17 +49,42 @@ page {
   align-items: center;
 }
 
-.navlist {
+.swipder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-item {
+  overflow: hidden;
+  will-change: transform;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-list {
   float: left;
-  width: 25%;
+  width: 63%;
   margin: auto;
   text-align: center;
   margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5rpx solid #ccc;
+  border-radius: 10rpx;
 }
 
-.navthumb image {
-  width: 38px;
-  height: 38px;
+.nav-list image {
+  width: 103px;
+  height: 80px;
 }
 
 /* 简历推荐 */
@@ -130,6 +143,6 @@ page {
 }
 
 /* 设置底部样式 */
-#foot{
+#foot {
   font-size: 23rpx;
 }

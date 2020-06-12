@@ -1,5 +1,5 @@
 	 <view class="resume-recommend-title">
-	 	<image src="../../../images/resume/recommend.png" />
+	 	<image src="{{recommend}}" />
 	 	<text class="title">简历推荐</text>
 	 </view>
 	 <view class="container">

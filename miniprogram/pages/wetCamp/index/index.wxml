@@ -9,6 +9,7 @@
 					<image src="{{ item.titleImg }}" />
 				</view>
 				<view class="rt">
+<<<<<<< HEAD
 					<view class="price">{{ item.titleName }}</view>
 					<view class="name">
 						时间：
@@ -17,6 +18,16 @@
 					<view class="name">
 						题目类型:
 						<text class="money">{{ item.titleType }}</text>
+=======
+					<view class="topic">百度2019年笔试三十题</view>
+					<view class="name">
+						时间：
+						<text class="text">30分钟</text>
+					</view>
+					<view class="name">
+						题目类型:
+						<text class="text">数据结构</text>
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
 					</view>
 					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
 						查看题目
@@ -24,8 +35,13 @@
 				</view>
 			</navigator>
 		</view>
+<<<<<<< HEAD
     </view>
 		
+=======
+
+
+>>>>>>> cdde0a06a82a3c8da0e853aa06b72bb4a5975c56
 		<view class="item bdbt">
 			<view class="line"></view>
 			<navigator url="../../wetCamp/detail/detail">
@@ -33,14 +49,14 @@
 					<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3550164124,1541214044&fm=26&gp=0.jpg" />
 				</view>
 				<view class="rt">
-					<view class="price">阿里秋招笔试卷</view>
+					<view class="topic">阿里秋招笔试卷</view>
 					<view class="name">
 						时间：
-						<text class="money">60分钟</text>
+						<text class="text">60分钟</text>
 					</view>
 					<view class="name">
 						题目类型:
-						<text class="money">数据结构&算法</text>
+						<text class="text">数据结构&算法</text>
 					</view>
 					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
 						查看题目
@@ -55,14 +71,14 @@
 					<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1290808832,4082142255&fm=26&gp=0.jpg" />
 				</view>
 				<view class="rt">
-					<view class="price">腾讯2020春招算法卷</view>
+					<view class="topic">腾讯2020春招算法卷</view>
 					<view class="name">
 						时间：
-						<text class="money">60分钟</text>
+						<text class="text">60分钟</text>
 					</view>
 					<view class="name">
 						题目类型:
-						<text class="money">数据结构&算法</text>
+						<text class="text">数据结构&算法</text>
 					</view>
 					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
 						查看题目
@@ -77,14 +93,14 @@
 					<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1787552885,2179214853&fm=26&gp=0.jpg" />
 				</view>
 				<view class="rt">
-					<view class="price">字节跳动前端秋招一卷</view>
+					<view class="topic">字节跳动前端秋招一卷</view>
 					<view class="name">
 						时间：
-						<text class="money">60分钟</text>
+						<text class="text">60分钟</text>
 					</view>
 					<view class="name">
 						题目类型:
-						<text class="money">前端</text>
+						<text class="text">前端</text>
 					</view>
 					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
 						查看题目
@@ -99,14 +115,14 @@
 					<image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3435949805,1135622836&fm=26&gp=0.jpg" />
 				</view>
 				<view class="rt">
-					<view class="price">华为算法工程师秋招一卷</view>
+					<view class="topic">华为算法工程师秋招一卷</view>
 					<view class="name">
 						时间：
-						<text class="money">60分钟</text>
+						<text class="text">60分钟</text>
 					</view>
 					<view class="name">
 						题目类型:
-						<text class="money">数据结构&算法</text>
+						<text class="text">数据结构&算法</text>
 					</view>
 					<view style="border:1rpx solid {{color}};color:{{color}};" class="baoming">
 						查看题目
