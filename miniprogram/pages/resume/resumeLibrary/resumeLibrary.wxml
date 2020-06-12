@@ -1,0 +1,21 @@
+	 <view class="resume-recommend-title">
+	 	<image src="{{recommend}}" />
+	 	<text class="title">简历推荐</text>
+	 </view>
+	 <view class="container">
+	 	<!-- 简历推荐 -->
+	 	<!-- 根据简历使用的次数进行推荐 -->
+
+	 	<view class="resume-title">
+	 		<view class="hr"></view>
+	 		<view class="resume-recommend">
+        <view wx:for="{{ resumeModel }}">
+          <view class="item" bindtap="gotoPageResume" data-index="{{ index }}">
+	 				<image src="{{ item.modelImg}}" />
+	 				<text class="item-text">{{ item.resumeType }}</text>
+	 			</view>
+        </view>
+	 			
+	 		</view>
+	 	</view>
+	 </view>

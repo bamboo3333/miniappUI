@@ -1,0 +1,6 @@
+
+<block>
+  <web-view src="{{ model.modelUrl }}"></web-view>
+</block>
+
+

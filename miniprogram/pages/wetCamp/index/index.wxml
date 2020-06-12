@@ -1,0 +1,27 @@
+<!-- 笔试训练营 -->
+<view class="container">
+	<view class="page">
+		<view class="title" style="float:left;margin-bottom:15px;">今日训练</view>
+    <view wx:for="{{ trains }}">
+    <view class="item bdbt">
+			<navigator url="../../wetCamp/detail/detail?index={{ index }}">
+				<view class="lt">
+					<image src="{{ item.titleImg }}" />
+				</view>
+				<view class="rt">
+					<view class="price">{{ item.titleName }}</view>
+					<view class="name">
+						时间：
+						<text class="money">{{ item.titleTime }}</text>
+					</view>
+				
+				</view>
+			</navigator>
+		</view>
+    </view>
+		
+		<view class="item bdbt">
+			<view class="line"></view>
+		</view>
+	</view>
+</view>

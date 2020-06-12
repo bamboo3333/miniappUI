@@ -1,0 +1,38 @@
+	<view class="container">
+		<view class="content">
+			<view class="title">
+				<image src="{{describe}}" mode="widthFix" />
+				<text>题目描述</text>
+			</view>
+			<text class="text">{{ train.titleDesc }}
+      </text>
+		</view>
+		<view class="content">
+			<view class="title">
+				<image src="{{example}}" mode="widthFix" />
+				<text>示例</text>
+			</view>
+			<text class="text">{{ train.titleExp }}
+    </text>
+		</view>
+		<view class="content">
+			<view class="title">
+				<image src="{{remarks}}" mode="widthFix" style="width:7%" />
+				<text>备注</text>
+			</view>
+			<text class="text">{{ train.titleRemark }}
+    </text>
+		</view>
+		<view class="content">
+			<view class="title">
+				<image src="{{link}}" mode="widthFix" style="width:7%" />
+				<text>题目链接</text>
+			</view>
+       <text class="text">{{ train.titleUrl }}</text>
+		</view>
+		<view class="comment">
+			<image src="{{comment}}" />
+			<input class="comment-input" placeholder=" 发布一下...."></input>
+			<image src="{{release}}" bindtap="comment"/>
+		</view>
+	</view>

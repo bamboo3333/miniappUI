@@ -1,0 +1,45 @@
+<!-- 招聘详情 -->
+<view class="container">
+	<view class="top_bg">
+		<image class="wrapper" src="../../../images/hire-new/hire-zhongxing.jpg" />
+		<view class="bg_word">
+			<text class="fi"></text>
+			<view class="se"></view>
+		</view>
+	</view>
+	<view class="personInfo">
+		<image src="../../../images/hire-new/HR.png" mode="widthFix" style="width:18%" />
+		<view>
+			<view>{{ jobDetail.publisher }}</view>
+		</view>
+	</view>
+	<view class="content">
+		<view class="title">
+			<image src="../../../images/hire-new/work-position.png" mode="widthFix" style="width:7%" />
+			<text>职位描述</text>
+		</view>
+		<text class="content1">
+        {{ jobDetail.jobDesc }}
+    </text>
+	</view>
+	<view class="content">
+		<view class="title">
+			<image src="../../../images/hire-new/work-position.png" mode="widthFix" style="width:7%" />
+			<text>职位要求</text>
+		</view>
+		<text class="content1">
+      {{ jobDetail.jobReq }}
+    </text>
+	</view>
+	<view class="content">
+		<view class="title">
+			<image src="../../../images/hire-new/company.png" mode="widthFix" style="width:7%" />
+			<text>公司介绍</text>
+		</view>
+		<text class="content1">
+    {{ jobDetail.companyDesc }}
+    </text>
+	</view>
+<!-- 设置底部 -->
+<foot></foot>
+</view>

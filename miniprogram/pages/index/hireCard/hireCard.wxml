@@ -1,0 +1,14 @@
+<!-- 招聘资讯标签卡 -->
+<view class="container">
+    <view class="course_detail">
+        <image class="course_wrapper" src="../../../images/hire-new/hire-zhongxing.jpg" />
+        <text class="publish">{{ job.title }}({{ job.type }})</text>
+        <view class="course_title">技能：{{ job.desc }}</view>
+        <view class="course_title">工作：{{ job.workType }}</view>
+        <view class="btn_box">
+            <navigator url="../detail/detail?index={{ index }}&type={{ type }}" hover-class="navigator-hover" class="con-item">
+                <view class="btn learn_btn">招聘详情</view>
+            </navigator>
+        </view>
+    </view>
+</view>

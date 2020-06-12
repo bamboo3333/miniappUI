@@ -1,0 +1,29 @@
+<view class="container">
+	<view class="personInformation">
+		<view class="avatar">
+			<image src="{{defaultAvatar}}" wx:if="{{!hasUserInfo}}" />
+			<image src="{{userInfo.avatarUrl}}" wx:if="{{hasUserInfo}}" />
+		</view>
+		<form class="form" bindsubmit="formSubmit">
+			<view class="item">
+				<text class="left-text">昵称</text>
+				<text wx:if="{{hasUserInfo}}">{{userInfo.nickName}}</text>
+				<text wx:else class="right-text">未登录</text>
+			</view>
+			<view class="item">
+				<text class="left-text">性别</text>
+				<text wx:if="{{hasUserInfo}} && {{userInfo.gender}}=='2'">女</text>
+				<text  wx:else class="right-text">男</text>
+			</view>
+			<view class="item">
+				<text class="left-text">密码</text>
+				<input  placeholder="密码(6~25含英文)" type="text" bindinput="userPassword" name='password' maxlength="25"></input>
+			</view>
+			<view class="item">
+				<text class="left-text">电话号码</text>
+				<input  placeholder="电话号码" type="number" bindinput="inputphone" maxlength="11" name='phone' ></input>
+			</view>
+			<button class="button" formType="submit" type="primary" wx:if="{{hasUserInfo}}">立即保存</button>
+		</form>
+	</view>
+</view>
