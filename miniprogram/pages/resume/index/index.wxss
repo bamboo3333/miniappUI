@@ -10,7 +10,7 @@ page {
   height: auto;
 }
 
-.slider{
+.slider {
   width: 100%;
   height: 450rpx;
 }
@@ -41,7 +41,7 @@ page {
 .resume-nav {
   background: #fff;
   width: 100%;
-  height: 150rpx;
+  height: 200rpx;
   padding: 20rpx 0;
   display: flex;
   flex-direction: row;
@@ -49,9 +49,28 @@ page {
   align-items: center;
 }
 
+.swipder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-item {
+  overflow: hidden;
+  will-change: transform;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
 .nav-list {
   float: left;
-  width: 25%;
+  width: 63%;
   margin: auto;
   text-align: center;
   margin-bottom: 1.5em;
@@ -59,11 +78,13 @@ page {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 0.5rpx solid #ccc;
+  border-radius: 10rpx;
 }
 
 .nav-list image {
-  width: 38px;
-  height: 38px;
+  width: 100px;
+  height: 75px;
 }
 
 /* 简历推荐 */
@@ -122,6 +143,6 @@ page {
 }
 
 /* 设置底部样式 */
-#foot{
+#foot {
   font-size: 23rpx;
 }

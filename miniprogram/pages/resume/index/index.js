@@ -20,31 +20,66 @@ Page({
     // 简历分类(左右滑动)
     items:[
       {
-        url:'',
-        text:'实习生',
-        icon:'../../../images/hire-new/trainee.png'
+        url:'../resume/resumeLibrary/resumeLibrary',
+        text:'设计师',
+        icon:'../../../images/resume/design.jpg'
       },
       {
-        url:'',
-        text:'全职',
-        icon:'../../../images/hire-new/fullTime.png'
+        url:'../resume/resumeLibrary/resumeLibrary',
+        text:'工程师',
+        icon:'../../../images/resume/engineer.jpg'
       },
       {
-        url:'',
-        text:'兼职',
-        icon:'../../../images/hire-new/partTimeJob.png'
+        url:'../resumeLibrary/resumeLibrary',
+        text:'运维',
+        icon:'../../../images/resume/Operation-and-maintenance.jpg'
+      },
+      {
+        url:'../resumeLibrary/resumeLibrary',
+        text:'测试',
+        icon:'../../../images/resume/test.jpg'
+      },
+      {
+        url:'../resumeLibrary/resumeLibrary',
+        text:'产品经理',
+        icon:'../../../images/resume/product-manager.jpg'
       }
+
     ],
-    // swiperData:{
-    //   previous:28,
-    //   next:400
-    // },
-    currentIndex:0,
+    swiperData:{
+      previous:28,
+      next:400
+    },
    
      // icon
       classificationIcon:'../../../images/resume/classification.png',
       recommend:'../../../images/resume/recommend.png'
 
+  },
+  handleSwiperChange(e) {
+    const currentIndex = e.detail.current
+    if(currentIndex == 0) {
+      this.setData({
+        swiperDis: {
+          previous: 28,
+          next: 400
+        }
+      })
+    }else if(currentIndex == 1) {
+      this.setData({
+        swiperDis: {
+          previous: 214,
+          next: 214
+        }
+      })
+    }else if(currentIndex == 2) {
+      this.setData({
+        swiperDis: {
+          previous: 400,
+          next: 28
+        }
+      })
+    }
   },
 
   /**

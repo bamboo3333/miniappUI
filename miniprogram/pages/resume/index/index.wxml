@@ -16,7 +16,7 @@
 		<view class="hr"></view>
 		<view class="resume-nav">
 			<!-- 实现左右滑动 -->
-			<swiper class="swipder" next-margin="{{swiperData.next}}rpx" current-item-id="{{currentIndex}}"  previous-margin="{{swiperData.previous}}rpx" bindchange="swiperChange">
+			<swiper class="swipder" next-margin="{{swiperData.next}}rpx" previous-margin="{{swiperData.previous}}rpx" bindchange="handleSwiperChange">
 				<block wx:for="{{items}}" wx:key="{{index}}" >
 					<swiper-item class="slide-item">
 						<navigator class="nav-list" url="{{item.url}}">
