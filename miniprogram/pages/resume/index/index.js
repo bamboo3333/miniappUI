@@ -7,8 +7,8 @@ Page({
   data: {
     imgURL:[
       '../../../images/resume/slider-1.PNG',
-      'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110807267,2350271632&fm=26&gp=0.jpg',
-      'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2215815949,1750406079&fm=11&gp=0.jpg'
+      '../../../images/resume/slider-2.jpg',
+      '../../../images/resume/slider-3.jpg'
     ],
     indicatorDots: true,
     vertical: true,
@@ -20,23 +20,23 @@ Page({
     // 简历分类(左右滑动)
     items:[
       {
-        url:'../resume/resumeLibrary/resumeLibrary',
+        url:'../resumeLibrary/resumeLibrary',
         text:'设计师',
         icon:'../../../images/resume/design.jpg'
       },
       {
-        url:'../resume/resumeLibrary/resumeLibrary',
+        url:'../resumeLibrary/resumeLibrary',
         text:'工程师',
         icon:'../../../images/resume/engineer.jpg'
       },
       {
         url:'../resumeLibrary/resumeLibrary',
-        text:'运维',
+        text:'运维师',
         icon:'../../../images/resume/Operation-and-maintenance.jpg'
       },
       {
         url:'../resumeLibrary/resumeLibrary',
-        text:'测试',
+        text:'测试师',
         icon:'../../../images/resume/test.jpg'
       },
       {
